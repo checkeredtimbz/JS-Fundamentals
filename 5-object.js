@@ -1,8 +1,9 @@
 #!/usr/bin/node
-require('./myVar');
+const myModule = require('./myVar');
 
 const myObject = {
   type: 'object',
-  value: myVar
+  value: myModule.myVar
 };
+
 console.log(myObject);
