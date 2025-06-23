@@ -1,9 +1,8 @@
-#!/usr/bin/node
-const myModule = require('./myVar');
+const arg = process.argv[2];
+const number = parseInt(arg);
 
-const myObject = {
-  type: 'object',
-  value: myModule.myVar
-};
-
-console.log(myObject);
+if (!isNaN(number)) {
+  console.log('My number: ' + number);
+} else {
+  console.log('Not a number');
+}
